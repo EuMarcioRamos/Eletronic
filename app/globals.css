@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components{
+.topo{
+  @apply 
+  bg-white 
+    flex 
+    flex-row 
+    justify-between 
+    items-center 
+    p-3 
+    mb-2
+}
+
+.selecionado{
+  @apply 
+    bg-blue-100 
+    flex 
+    gap-2 
+    pl-2 
+    block 
+    text-blue-900 
+    rounded-2xl 
+    font-semibold
+}
+
+.NaoSelecionado{
+  @apply 
+  text-gray-600 
+    flex 
+    gap-2 pl-2 
+    hover:bg-gray-200 
+    hover:rounded-2xl
+}
+
+.buttonComprar{
+
+  @apply 
+  bg-green-600  
+    w-39 p-1 
+    rounded-xl 
+    cursor-pointer 
+    text-white 
+    font-semibold 
+    hover:bg-green-800 
+}
+
+.buttonCart{
+  @apply 
+    bg-orange-400 
+    flex 
+    items-center 
+    justify-center  
+    w-9 cursor-pointer 
+    rounded-xl 
+    hover:bg-orange-600
+}
+
+
+
+}
+
+
